@@ -1,30 +1,114 @@
 .kurlyMain {
   border: 2px solid purple;
-  width: 100%;
   height: 370px;
+  overflow: hidden;
+  width: 1600px;
+  margin: 0 auto;
 }
 .kurlyMain .main_type1 {
   display: flex;
 }
-.main_type1 .box > img {
+
+.kurlyMain .main_type1 .box .imag {
+  justify-content: center;
+  text-align: center;
+  width: 1050px;
+  margin: 0 auto;
 }
 
-.kurlyMain .main_btn button {
-  width: 300px;
-  height: 300px;
+.main_type1 .box {
+  vertical-align: middle;
+  transition: all 0.5s;
 }
 .arrow-dir {
   position: absolute;
-  left: 140px;
-  top: 303px;
+  left: 5px;
+  top: 320px;
   display: flex;
-  width: 1280px;
+  width: 1260px;
   justify-content: space-between;
 }
+.arrow-dir .BtnSlider {
+  justify-content: center;
+  text-align: center;
+}
+.arrow-dir .prev {
+  cursor: pointer;
+}
+.arrow-dir .next {
+  cursor: pointer;
+}
+.kurlyMain .main_type1 .box .img {
+  transform: translate(-0%);
+}
 
-.kurlyMain .main_type2 {
+.main_type2 {
   border: 1px solid red;
   width: 1050px;
-  height: 1400px;
+  height: 1845px;
   margin: 0 auto;
+}
+.main_type2 .name {
+  padding: 69px 0 35px;
+  position: relative;
+  font-weight: 700;
+  font-size: 28px;
+  color: #333;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  text-align: center;
+}
+
+.main_type2 .product {
+  width: 100%;
+  position: relative;
+  height: 614px;
+  margin: 0px auto;
+}
+.product3 {
+  background-color: #f7f7f7;
+  width: 100%;
+  position: relative;
+  height: 620px;
+  margin: 0px auto;
+}
+.product3 .name3 {
+  padding: 69px 0 35px;
+  position: relative;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  text-align: center;
+}
+.bnr_main {
+  width: 1050px;
+  margin: 0 auto;
+}
+.bnr_main .link {
+  display: block;
+  min-height: 140px;
+  background-image: url(//img-cf.kurly.com/shop/data/main/5/pc_img_1631785404.jpg);
+  background-color: #eee;
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+  width: 1050px;
+}
+
+.main_type4 {
+  border: 1px solid purple;
+  width: 1050px;
+  height: 1800px;
+  margin: 0 auto;
+}
+.main_type4 .product4 {
+  padding: 69px 0 34px;
+  position: relative;
+  font-weight: 700;
+  font-size: 28px;
+  color: #333;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  text-align: center;
 }

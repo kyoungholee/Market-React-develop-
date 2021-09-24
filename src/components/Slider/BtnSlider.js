@@ -7,8 +7,9 @@ export default function BtnSlider( {direction , moviSlide}) {
         <button
         onClick = {moviSlide}
         className = {direction === "next" ? 'btn-slide next' :
-        "btn-silde prev"}>
-            <img src = {direction === "next" ? rightArrow : leftArrow}/>
+        "btn-silde prev"}
+        >
+            <img src = {direction === "next" ? rightArrow : leftArrow} width = "30px"/>
         </button>
     );
 }

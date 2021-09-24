@@ -96,7 +96,7 @@ input,
 select,
 textarea,
 button {
-  font-family: "noto sans, malgun gothic, AppleGothic, dotum";
+  font-family: "noto sans";
   line-height: 1;
   letter-spacing: -0.05em;
   color: #4c4c4c;

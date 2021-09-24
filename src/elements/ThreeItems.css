@@ -1,0 +1,49 @@
+.qw3 .item3 {
+  float: left;
+  list-style: none;
+  position: relative;
+  width: 340px;
+  margin-right: 10px;
+}
+.qw3 .item3 .imgBox3 {
+  position: relative;
+}
+.qw3 .item3 .imgBox3 img {
+  width: 338px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.qw3 .item3 .infoBox3 {
+  max-height: 75px;
+  margin-top: 15px;
+  text-align: center;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+.qw3 .item3 .infoBox3 a {
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+}
+.qw3 .item3 .infoBox3 .salePrice3 {
+  display: inline-block;
+  padding-top: 9px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.qw3 .item3 .infoBox3 .marketPrice3 {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+  color: #999;
+  line-height: 18px;
+}

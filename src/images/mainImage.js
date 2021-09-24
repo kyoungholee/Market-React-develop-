@@ -1,7 +1,7 @@
-import main_pic1 from "./main_pic1.JPG";
-import main_pic2 from "./main_pic2.JPG";
-import main_pic3 from "./main_pic3.JPG";
-import main_pic4 from "./main_pic4.JPG";
+import main_pic1 from "./main_pic1.jpg";
+import main_pic2 from "./main_pic2.jpg";
+import main_pic3 from "./main_pic3.jpg";
+import main_pic4 from "./main_pic4.jpg";
 
 
 
