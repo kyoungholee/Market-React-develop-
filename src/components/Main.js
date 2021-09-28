@@ -134,23 +134,33 @@ const nextSlide = () => {
                             <ul>
                                 <li>
                                 <MDItems gift = {"채소"}/>
-                                <MDItems gift = {"과일,견과,쌀"}/>
-                                <MDItems gift = {"수산,해산,건어물"}/>
-                                <MDItems gift = {"정육,계란"}/>
-                                <MDItems gift = {"국,반찬,메인요리"}/>
-                                <MDItems gift = {"샐러드,간편식"}/>
-                                <MDItems gift = {"생수,음료,우유,커피"}/>
-                                <MDItems gift = {"간식,과자,떡"}/>
-                                <MDItems gift = {"베이커리,치즈,델리"}/>
+                                <MDItems gift = {"과일·견과·쌀"}/>
+                                <MDItems gift = {"수산·해산·건어물"}/>
+                                <MDItems gift = {"정육·계란"}/>
+                                <MDItems gift = {"국·반찬·메인요리"}/>
+                                <MDItems gift = {"샐러드·간편식"}/>
+                                <MDItems gift = {"면·오일·양념"}/>
+                                <MDItems gift = {"생수·음료·우유·커피"}/>
+                                <MDItems gift = {"간식·과자·떡"}/>
+                                <MDItems gift = {"베이커리·치즈·델리"}/>
                                 <MDItems gift = {"건강식품"}/>
-                                <MDItems gift = {"생활용품,리빙,캠핑"}/>
-                                <MDItems gift = {"헤어,바디,구강"}/>
+                                <MDItems gift = {"생활용품·리빙·캠핑"}/>
+                                <MDItems gift = {"스킨케어·메이크업"}/>
+                                <MDItems gift = {"헤어·바디·구강"}/>
                                 <MDItems gift = {"주방용품"}/>
                                 <MDItems gift = {"가전제품"}/>
                                 <MDItems gift = {"베이비.키즈"}/>
                                 <MDItems gift = {"반려동물"}/>
-                                <MDItems gift = {"면,오일,양념"}/>
-                                <MDItems gift = {"스킨케어,메이크업"}/>
+                                </li>
+                                <li>
+                                <Items imgUrl = "https://img-cf.kurly.com/shop/data/goods/1595490225464l0.jpg"
+                                name = "불비빔냉명 2인분"  slae ="50%" price ="5,400원" marketPrice ="10,00원" />
+                                <Items imgUrl = "https://img-cf.kurly.com/shop/data/goods/1595490225464l0.jpg"
+                                name = "불비빔냉명 2인분"  slae ="50%" price ="5,400원" marketPrice ="10,00원" />
+                                <Items imgUrl = "https://img-cf.kurly.com/shop/data/goods/1595490225464l0.jpg"
+                                name = "불비빔냉명 2인분"  slae ="50%" price ="5,400원" marketPrice ="10,00원" />
+                                <Items imgUrl = "https://img-cf.kurly.com/shop/data/goods/1595490225464l0.jpg"
+                                name = "불비빔냉명 2인분"  slae ="50%" price ="5,400원" marketPrice ="10,00원" />
                                 </li>
                             </ul>
                 </div> 

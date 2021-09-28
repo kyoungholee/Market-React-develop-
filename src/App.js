@@ -1,9 +1,10 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
-import {hotdogImage} from "./images/imageFile"
-import {dumplingImage } from "./images/imageFile";
+import Login from "./components/Login";
 import ImageRender from './images/Image';
 import Footer from "./components/Footer";
+import {BrowserRouter, Route, Switch } from 'react-router-dom';
+import Join from "./components/Join";
 
 function App() {
 
@@ -13,16 +14,30 @@ function App() {
   // ];
 
 
+/** Switch에 외부는 공통으로 위치하며
+ * Switch에 내부는 url에 따라 각각 다르게 나타난다. 
+*/
   return (
+    <BrowserRouter>
     <div className="App">
       <Header/>
+        <Switch> 
+        <Route exact path = "/" >
         <Main />
-        <h2>사진 리스트 </h2>
-     
+        </Route>
 
+        <Route path = "/Login" component = {Login}>
+        
+        </Route>
 
-      <Footer/> 
+        <Route path = "/Join" component = {Join}>
+        
+        </Route>
+
+        </Switch>
+        <Footer/> 
     </div>
+    </BrowserRouter>
   );
 }
 

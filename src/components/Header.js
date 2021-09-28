@@ -3,7 +3,6 @@ import "./Header.css";
 import {useState} from 'react';
 
 
-
 function Header({history}) {
     const [login, setlogin] = useState();
     const [userInfo ,setuserInfo] = useState();
@@ -19,8 +18,8 @@ function Header({history}) {
                     <div className="HeaderMenu">
                         {!login && (
                             <ul>
-                                <li onClick={()=>history.push('/sign')}className="header-menu-signup">회원가입</li>
-                                <li onClick={()=>history.push('/login')} className="header-menu">로그인</li>
+                                <li onClick={()=>history.push('/Join')} className="header-menu-signup">회원가입</li>
+                                <li onClick={()=>history.push('/Login')} className="header-menu">로그인</li>
                                 <li className="arrow">고객센터</li>
                             </ul>
                         )}
