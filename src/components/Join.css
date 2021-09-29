@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.glgl {
+  width: 1050px;
+  margin: 0 auto;
+}
+.glgl .start_Join {
+  width: 640px;
+  margin: 0 auto;
+}
+.glgl .start_Join .sign-up {
+  overflow: hidden;
+  padding: 50px 0 51px;
+}
+.glgl .start_Join h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #333;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.glgl .start_Join .text {
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: #666;
+  line-height: 17px;
+  text-align: right;
+}
+.glgl .start_Join .text .ico {
+  width: 1050px;
+  padding-right: 2px;
+  color: #ee6a7b;
+}
+.glgl .start_Join .list {
+  width: 640px;
+  margin: 0 auto;
+}

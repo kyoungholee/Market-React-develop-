@@ -1,13 +1,26 @@
 import React from 'react';
 import "./Header.css";
 import {useState} from 'react';
+import {Link, useHistory } from 'react-router-dom';
 
 
-function Header({history}) {
+
+function Header() {
     const [login, setlogin] = useState();
     const [userInfo ,setuserInfo] = useState();
 
-    
+    const history = useHistory();
+
+    const goToLogin  = () => {
+        history.push('/Login')
+    }
+    const goToJoin = () => {
+        history.push('/Join')
+    }
+
+
+
+
     return (
         <>
         <div className="hkhk">
@@ -16,10 +29,11 @@ function Header({history}) {
                     <img src="https://res.kurly.com/pc/service/common/2011/delivery_210801.png" alt="샛별, 택배 배송안내"
                     style = {{cursor: 'pointer'}} width ="121" height="22"/>
                     <div className="HeaderMenu">
+                    {login ? "로그아웃" : "로그인"}
                         {!login && (
                             <ul>
-                                <li onClick={()=>history.push('/Join')} className="header-menu-signup">회원가입</li>
-                                <li onClick={()=>history.push('/Login')} className="header-menu">로그인</li>
+                                <li onClick = {goToJoin} className = "header-menu-join">회원가입</li>
+                            <li onClick = {goToLogin} className="header-menu">로그인</li>
                                 <li className="arrow">고객센터</li>
                             </ul>
                         )}

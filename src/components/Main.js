@@ -152,6 +152,7 @@ const nextSlide = () => {
                                 <MDItems gift = {"베이비.키즈"}/>
                                 <MDItems gift = {"반려동물"}/>
                                 </li>
+                                
                                 <li>
                                 <Items imgUrl = "https://img-cf.kurly.com/shop/data/goods/1595490225464l0.jpg"
                                 name = "불비빔냉명 2인분"  slae ="50%" price ="5,400원" marketPrice ="10,00원" />
