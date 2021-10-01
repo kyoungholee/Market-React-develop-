@@ -9,6 +9,7 @@ import BtnSlider from './Slider/BtnSlider';
 import Items from '../elements/Items';
 import ThreeItems from '../elements/ThreeItems';
 import MDItems from '../elements/MDItems';
+import dummy from "../dummy/veg";
 import {useState} from 'react';
 
 
@@ -34,6 +35,20 @@ const movies = [
       )
   })
 
+  const renderDatas = dummy.map(data => {
+    return(
+        <div>
+            <div>{data.id}</div>
+            <div>{data.title}</div>
+            <div>{data.imgUrl}</div>
+            <div>{data.price}</div>
+            <div>{data.sale}</div>
+            <div>{data.marketPrice}</div>
+        </div>
+    );
+
+  })
+
 
 
 
@@ -57,6 +72,7 @@ const nextSlide = () => {
         setSlideIndex(1)
     }
 }
+
 
 
     return (
@@ -147,23 +163,16 @@ const nextSlide = () => {
                                 <MDItems gift = {"생활용품·리빙·캠핑"}/>
                                 <MDItems gift = {"스킨케어·메이크업"}/>
                                 <MDItems gift = {"헤어·바디·구강"}/>
-                                <MDItems gift = {"주방용품"}/>
                                 <MDItems gift = {"가전제품"}/>
                                 <MDItems gift = {"베이비.키즈"}/>
                                 <MDItems gift = {"반려동물"}/>
                                 </li>
-                                
-                                <li>
-                                <Items imgUrl = "https://img-cf.kurly.com/shop/data/goods/1595490225464l0.jpg"
-                                name = "불비빔냉명 2인분"  slae ="50%" price ="5,400원" marketPrice ="10,00원" />
-                                <Items imgUrl = "https://img-cf.kurly.com/shop/data/goods/1595490225464l0.jpg"
-                                name = "불비빔냉명 2인분"  slae ="50%" price ="5,400원" marketPrice ="10,00원" />
-                                <Items imgUrl = "https://img-cf.kurly.com/shop/data/goods/1595490225464l0.jpg"
-                                name = "불비빔냉명 2인분"  slae ="50%" price ="5,400원" marketPrice ="10,00원" />
-                                <Items imgUrl = "https://img-cf.kurly.com/shop/data/goods/1595490225464l0.jpg"
-                                name = "불비빔냉명 2인분"  slae ="50%" price ="5,400원" marketPrice ="10,00원" />
-                                </li>
+                              <li>
+                                <Items>{renderDatas}</Items>
+                              </li>
+
                             </ul>
+
                 </div> 
         </>
     )

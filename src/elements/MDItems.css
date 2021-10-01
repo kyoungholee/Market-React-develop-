@@ -22,3 +22,11 @@
   font-size: 14px;
   line-height: 18px;
 }
+.md-items li a:hover {
+  color: purple;
+  cursor: pointer;
+}
+.md-items li a:active {
+  background-color: purple;
+  color: white;
+}

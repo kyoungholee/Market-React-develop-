@@ -1,0 +1,31 @@
+.content {
+  min-width: 1050px;
+  padding-bottom: 120px;
+  position: relative;
+}
+.section_login {
+  width: 340px;
+  margin: 0 auto;
+  padding-top: 90px;
+  letter-spacing: -0.6px;
+}
+.section_login h3 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.section_login .write_form {
+  padding-top: 36px;
+}
+.section_login .write_form input {
+  width: 88%;
+  height: 54px;
+  padding: 0 19px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+}
