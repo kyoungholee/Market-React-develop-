@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Header.css";
-import {useState} from 'react';
-import {Link, useHistory } from 'react-router-dom';
+import {useState, useEffect} from 'react';
+import {Link, useHistory} from 'react-router-dom';
 
 
 
@@ -18,6 +18,9 @@ function Header() {
         history.push('/Join')
     }
 
+    useEffect(() => {
+        console.log("로그인 페이지로 이동")
+    }, [login])
 
 
 
@@ -29,7 +32,6 @@ function Header() {
                     <img src="https://res.kurly.com/pc/service/common/2011/delivery_210801.png" alt="샛별, 택배 배송안내"
                     style = {{cursor: 'pointer'}} width ="121" height="22"/>
                     <div className="HeaderMenu">
-                    {login ? "로그아웃" : "로그인"}
                         {!login && (
                             <ul>
                                 <li onClick = {goToJoin} className = "header-menu-join">회원가입</li>

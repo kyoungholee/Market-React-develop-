@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import "./Login.css";
 
@@ -8,6 +8,15 @@ function Login() {
 
     const [id , setId] = useState('')
     const [pwd, setPwd] = useState('')
+
+    const newId = () => {
+        setId(id.toString())
+    }
+
+    useEffect(() => {
+        console.log("로그인이 되었습니다.")
+
+    },[id] );
 
     const login = () => {
         if (id === "" || pwd === "") {
@@ -44,10 +53,12 @@ function Login() {
                             <label>
                                 보안접속
                             </label>
-                    </div>
-                    <div className = "login_search">
-                            <Link to = "/">아이디 찾기</Link>
-                            <Link to = "/">비밀번호 찾기</Link>
+                    
+                        <div className = "login_search">
+                                <Link to = "/">아이디 찾기</Link>
+                                <span className = "bar"></span>
+                                <Link to = "/">비밀번호 찾기</Link>
+                        </div>
                     </div>
                     <button className = "btn_type">
                             <span>로그인 </span>

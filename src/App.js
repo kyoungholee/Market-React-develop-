@@ -4,13 +4,9 @@ import Login from "./components/Login";
 import Footer from "./components/Footer";
 import {BrowserRouter, Route, Switch } from 'react-router-dom';
 import Join from "./components/Join";
-import Data from '../src/dummy/veg';
 import {useState} from 'react';
 
 function App() {
-
-
-  const [item ,setItem] = useState(Data);
 
 /** Switch에 외부는 공통으로 위치하며
  * Switch에 내부는 url에 따라 각각 다르게 나타난다. 
@@ -19,6 +15,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Header/>
+
         <Switch> 
         <Route exact path = "/" >
         <Main />
@@ -33,6 +30,7 @@ function App() {
         </Route>
 
         </Switch>
+        
         <Footer/> 
     </div>
     </BrowserRouter>

@@ -9,8 +9,9 @@ import BtnSlider from './Slider/BtnSlider';
 import Items from '../elements/Items';
 import ThreeItems from '../elements/ThreeItems';
 import MDItems from '../elements/MDItems';
-import dummy from "../dummy/veg";
+import dummy from "../dummy/category";
 import {useState} from 'react';
+import category from '../dummy/category';
 
 
 
@@ -35,15 +36,15 @@ const movies = [
       )
   })
 
-  const renderDatas = dummy.map(data => {
+  const [item, setItem] = useState([]);
+
+ 
+
+  const renderDatas = dummy.map(category => {
     return(
         <div>
-            <div>{data.id}</div>
-            <div>{data.title}</div>
-            <div>{data.imgUrl}</div>
-            <div>{data.price}</div>
-            <div>{data.sale}</div>
-            <div>{data.marketPrice}</div>
+            <div>{category.id}</div>
+            <div>{category.name}</div>
         </div>
     );
 
@@ -149,7 +150,9 @@ const nextSlide = () => {
                     </div>
                             <ul>
                                 <li>
-                                <MDItems gift = {"채소"}/>
+                                <MDItems gift = {"채소"}
+                                    
+                                />
                                 <MDItems gift = {"과일·견과·쌀"}/>
                                 <MDItems gift = {"수산·해산·건어물"}/>
                                 <MDItems gift = {"정육·계란"}/>
@@ -167,10 +170,7 @@ const nextSlide = () => {
                                 <MDItems gift = {"베이비.키즈"}/>
                                 <MDItems gift = {"반려동물"}/>
                                 </li>
-                              <li>
-                                <Items>{renderDatas}</Items>
-                              </li>
-
+                            
                             </ul>
 
                 </div> 

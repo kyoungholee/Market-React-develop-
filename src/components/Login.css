@@ -29,3 +29,40 @@
   line-height: 20px;
   outline: none;
 }
+.section_login .checkbox_save {
+  overflow: hidden;
+  padding-bottom: 28px;
+}
+.section_login .checkbox_save label {
+  float: left;
+  margin-top: 9px;
+  position: relative;
+  padding: 0 0 3px 22px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.section_login .login_search {
+  float: right;
+  padding-top: 13px;
+  text-decoration-line: none;
+}
+.section_login .login_search .bar {
+  float: unset;
+  width: 1px;
+  height: 10px;
+  margin: 3px 6px 0;
+  background-color: #333;
+}
+
+.section_login .btn_type {
+  border: 1px solid #5f0081;
+  background-color: #5f0080;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 19px;
+  color: #fff;
+  line-height: 51px;
+}

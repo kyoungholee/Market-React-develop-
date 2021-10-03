@@ -1,5 +1,4 @@
 .kurlyMain {
-  border: 2px solid purple;
   height: 370px;
   overflow: hidden;
   width: 1600px;
@@ -43,7 +42,6 @@
 }
 
 .main_type2 {
-  border: 1px solid red;
   width: 1050px;
   height: 1845px;
   margin: 0 auto;
@@ -97,7 +95,6 @@
 }
 
 .main_type4 {
-  border: 1px solid purple;
   width: 1050px;
   height: 1800px;
   margin: 0 auto;

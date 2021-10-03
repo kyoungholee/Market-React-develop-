@@ -109,7 +109,6 @@ li {
 }
 
 .footer {
-  border: 1px solid skyblue;
   width: 1050px;
   margin: 0 auto;
   padding-bottom: 60px;
@@ -171,7 +170,6 @@ li {
   height: 40px;
   padding-top: 7px;
   margin-top: 3px;
-  border: 1px solid #e3e3e3;
   border-radius: 3px;
   font-weight: 700;
   font-size: 14px;
@@ -189,7 +187,6 @@ li {
   height: 40px;
   padding-top: 7px;
   margin-top: 3px;
-  border: 1px solid #e3e3e3;
   border-radius: 3px;
   font-weight: 700;
   font-size: 14px;

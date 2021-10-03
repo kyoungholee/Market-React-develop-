@@ -10,12 +10,14 @@ function Join() {
     const [number, setNumber] = useState('');
     const [address, setAddress] = useState('');
 
-    
+    const usernameChange = () => {
+        setUsername()
+    }
 
 
     useEffect(() => {
         console.log("조건에 맞는 아이디입니다.")
-    } , [setUsername])
+    } , [username])
 
 
 
@@ -164,7 +166,9 @@ function Join() {
 
 
                     </tbody>
+                    <div className = "form_footer">
                     <button className = "Sign_up">가입하기</button>
+                    </div>
                 </table>
             </div>     
         </div>

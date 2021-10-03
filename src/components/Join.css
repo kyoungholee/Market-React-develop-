@@ -155,7 +155,8 @@ input[type="radio"] {
 .list input[type="radio"]:checked + .ico {
   border: 1px solid #5f0081;
 }
-.glgl .start_Join .list .Sign_up {
+.form_footer .Sign_up {
+  display: inline-block;
   width: 240px;
   height: 56px;
   font-size: 16px;
@@ -166,4 +167,9 @@ input[type="radio"] {
   margin-left: 19px;
   text-align: center;
   vertical-align: top;
+  margin-left: 10px;
+}
+.form_footer {
+  text-align: center;
+  padding-top: 40px;
 }
