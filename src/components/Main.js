@@ -9,8 +9,9 @@ import BtnSlider from './Slider/BtnSlider';
 import Items from '../elements/Items';
 import ThreeItems from '../elements/ThreeItems';
 import MDItems from '../elements/MDItems';
-import dummy from "../dummy/category";
+import dummy, { Item1, Item2 , Item3} from "../dummy/category";
 import {useState} from 'react';
+import styled from 'styled-components';
 
 
 
@@ -34,9 +35,6 @@ const movies = [
 
       )
   })
-
-  const [item, setItem] = useState([]);
-
  
 
   const renderDatas = dummy.map(category => {
@@ -46,7 +44,13 @@ const movies = [
 
   })
 
+  const [item, setItem] = useState([]);
 
+  const purClick = () => {
+      setItem(console.log(Item1))
+      setItem(console.log(Item2))
+      setItem(console.log(Item3))
+  }
 
 
 const [slideIndex ,setSlideIndex] = useState(1);
@@ -146,7 +150,9 @@ const nextSlide = () => {
                         <h3> MD추천</h3>
                     </div>
                             <div>
-                                <dummy className = "dumdata">{renderDatas}</dummy>
+                                <dummy className = "dumdata"
+                                onClick = {purClick}>
+                                {renderDatas}</dummy>
                             </div>
                 </div> 
         </>
