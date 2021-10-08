@@ -53,16 +53,3 @@
   margin: 3px 6px 0;
   background-color: #333;
 }
-
-.section_login .btn_type {
-  border: 1px solid #5f0081;
-  background-color: #5f0080;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 3px;
-  font-weight: 500;
-  font-size: 19px;
-  color: #fff;
-  line-height: 51px;
-}

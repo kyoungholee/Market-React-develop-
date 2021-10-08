@@ -1,7 +1,7 @@
 const category = [
     {
         id : 1,
-        name :"채소"
+        name :"채소입니다."
     },
     {
         id : 2,
@@ -37,21 +37,21 @@ const category = [
     },
     {
         id : 10,
-        name : "과일,견과"
+        name : "간식 과자 떡"
     },
     {
         id : 11,
-        name : "과일,견과"
+        name : "건강 식품"
     },
     {
         id : 12,
-        name : "과일,견과"
+        name : "생활용품 리빙 캠핑"
     },
 ]
 
 //채소 데이터 
 
-const Item1 = [
+export const Item1 = [
     {
         id : 1,
         name : "양파"
@@ -61,14 +61,14 @@ const Item1 = [
         name : "대파"
     },
     {
-        id : 1,
+        id : 3,
         name : "고구마"
     }
 
 ]
 
 //채소와 견과 
-const Item2 = [
+export const Item2 = [
     {
         id : 1,
         name : "사과"
@@ -80,4 +80,16 @@ const Item2 = [
 
 ]
 
+//수산 해산 건어물 
+export const Item3 = [
+    {
+        id : 1,
+        name : "오징어"
+    },
+    {
+        id : 2,
+        name : "한치"
+    }
+
+]
 export default category;

@@ -6,7 +6,7 @@ function MDItems(props) {
     <>    
             <ul className ="md-items">
                 <li>
-                    <a>{props.gift}</a>
+                    <a>{props.gift} </a>
                 </li>
             </ul>
  

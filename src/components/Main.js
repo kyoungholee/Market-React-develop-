@@ -11,7 +11,6 @@ import ThreeItems from '../elements/ThreeItems';
 import MDItems from '../elements/MDItems';
 import dummy from "../dummy/category";
 import {useState} from 'react';
-import category from '../dummy/category';
 
 
 
@@ -42,10 +41,7 @@ const movies = [
 
   const renderDatas = dummy.map(category => {
     return(
-        <div>
-            <div>{category.id}</div>
-            <div>{category.name}</div>
-        </div>
+      <li>{category.name}</li>
     );
 
   })
@@ -144,35 +140,14 @@ const nextSlide = () => {
                         <a className="link">
                         </a>
                 </div>
+
                 <div className = "main_type4">
                     <div className = "product4">
                         <h3> MD추천</h3>
                     </div>
-                            <ul>
-                                <li>
-                                <MDItems gift = {"채소"}
-                                    
-                                />
-                                <MDItems gift = {"과일·견과·쌀"}/>
-                                <MDItems gift = {"수산·해산·건어물"}/>
-                                <MDItems gift = {"정육·계란"}/>
-                                <MDItems gift = {"국·반찬·메인요리"}/>
-                                <MDItems gift = {"샐러드·간편식"}/>
-                                <MDItems gift = {"면·오일·양념"}/>
-                                <MDItems gift = {"생수·음료·우유·커피"}/>
-                                <MDItems gift = {"간식·과자·떡"}/>
-                                <MDItems gift = {"베이커리·치즈·델리"}/>
-                                <MDItems gift = {"건강식품"}/>
-                                <MDItems gift = {"생활용품·리빙·캠핑"}/>
-                                <MDItems gift = {"스킨케어·메이크업"}/>
-                                <MDItems gift = {"헤어·바디·구강"}/>
-                                <MDItems gift = {"가전제품"}/>
-                                <MDItems gift = {"베이비.키즈"}/>
-                                <MDItems gift = {"반려동물"}/>
-                                </li>
-                            
-                            </ul>
-
+                            <div>
+                                <dummy className = "dumdata">{renderDatas}</dummy>
+                            </div>
                 </div> 
         </>
     )
